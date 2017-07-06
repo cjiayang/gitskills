@@ -1,0 +1,4 @@
+1497841695792	Extract local variable 'itemCatList'
+1497847251354	Extract local variable 'itemCatJson'
+1497848952415	Extract local variable 'jsonNode'
+1497850234101	Extract local variable 'aaa'

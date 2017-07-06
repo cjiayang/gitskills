@@ -1,0 +1,20 @@
+package com.jt.manage.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.jt.manage.mapper.ItemMapper;
+import com.jt.manage.pojo.Item;
+@Service
+public class ItemService {
+	@Autowired
+	private ItemMapper itemMapper;
+	public List<Item> queryItemList(){
+		PageHelper pageHelper = new PageHelper();
+		pageHelper.startPage(100, 20);
+		return itemMapper.queryItemList();
+	}
+}

@@ -1,0 +1,74 @@
+package com.jt.order.pojo;
+
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import com.jt.common.po.BasePojo;
+@Table(name="tb_order_shipping")
+public class OrderShipping extends BasePojo{
+	@Id
+	private String orderId;
+	private String receiverName;
+	private String receiverPhone;
+	private String receiverMobile;
+	private String receiverState ;
+	private String receiverCity;
+	private String receiverDistrict;
+	private String receiverAddress;
+	private String receiverZip;
+	public String getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getReceiver_name() {
+		return receiver_name;
+	}
+	public void setReceiver_name(String receiver_name) {
+		this.receiver_name = receiver_name;
+	}
+	public String getReceiver_phone() {
+		return receiver_phone;
+	}
+	public void setReceiver_phone(String receiver_phone) {
+		this.receiver_phone = receiver_phone;
+	}
+	public String getReceiver_mobile() {
+		return receiver_mobile;
+	}
+	public void setReceiver_mobile(String receiver_mobile) {
+		this.receiver_mobile = receiver_mobile;
+	}
+	public String getReceiver_state() {
+		return receiver_state;
+	}
+	public void setReceiver_state(String receiver_state) {
+		this.receiver_state = receiver_state;
+	}
+	public String getReceiver_city() {
+		return receiver_city;
+	}
+	public void setReceiver_city(String receiver_city) {
+		this.receiver_city = receiver_city;
+	}
+	public String getReceiver_district() {
+		return receiver_district;
+	}
+	public void setReceiver_district(String receiver_district) {
+		this.receiver_district = receiver_district;
+	}
+	public String getReceiver_address() {
+		return receiver_address;
+	}
+	public void setReceiver_address(String receiver_address) {
+		this.receiver_address = receiver_address;
+	}
+	public String getReceiver_zip() {
+		return receiver_zip;
+	}
+	public void setReceiver_zip(String receiver_zip) {
+		this.receiver_zip = receiver_zip;
+	}
+	
+}

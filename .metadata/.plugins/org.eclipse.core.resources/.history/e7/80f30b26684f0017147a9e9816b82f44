@@ -1,0 +1,13 @@
+package com.jt.manage.service;
+
+import java.util.List;
+
+import com.jt.manage.mapper.ItemMapper;
+import com.jt.manage.pojo.Item;
+
+public class ItemService {
+	private ItemMapper itemMapper;
+	public List<Item> queryItemList(){
+		return itemMapper.queryItemList();
+	}
+}

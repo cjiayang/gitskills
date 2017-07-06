@@ -1,0 +1,18 @@
+package com.jt.web.controller;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.jt.web.pojo.Cart;
+
+@Controller
+@RequestMapping("/order")
+public class OrderController {
+	@RequestMapping("/create")
+	public String create(Model model){
+		List<Cart> carts = OrderService
+	}
+}

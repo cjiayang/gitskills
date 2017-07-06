@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;jt-manage/jt-manage-pojo/src/main/java/com/jt/pojo/ItemCart.java&apos; to &apos;ItemCat.java&apos;" description="Rename resource &apos;ItemCart.java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="jt-manage-pojo/src/main/java/com/jt/pojo/ItemCart.java" name="ItemCat.java" stamp="1497010272133" updateReferences="true"/>
+</session>

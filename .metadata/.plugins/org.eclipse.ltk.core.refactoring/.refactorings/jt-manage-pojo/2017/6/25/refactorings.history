@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ItemDesc.java&apos; to &apos;jt-web/src/main/java/com.jt.web.pojo&apos;&#x0D;&#x0A;- Original project: &apos;jt-manage-pojo&apos;&#x0D;&#x0A;- Destination element: &apos;jt-web/src/main/java/com.jt.web.pojo&apos;&#x0D;&#x0A;- Original element: &apos;com.jt.manage.pojo.ItemDesc.java&apos;" description="Copy compilation unit" destination="=jt-web/src\/main\/java&lt;com.jt.web.pojo" element1="/src\/main\/java&lt;com.jt.manage.pojo{ItemDesc.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1498047091148" units="1" version="1.0"/>
+</session>

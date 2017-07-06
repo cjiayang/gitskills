@@ -1,0 +1,17 @@
+package com.jt.manage.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.jt.manage.pojo.Item;
+import com.jt.manage.service.ItemService;
+@Controller
+public class ItemController {
+	@Autowired
+	private ItemService itemService;
+	public List<Item> queryItemList(){
+		return itemService.queryItemList();
+	}
+}

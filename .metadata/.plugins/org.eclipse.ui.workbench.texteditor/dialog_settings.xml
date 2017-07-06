@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="273" key="DIALOG_WIDTH"/>
+		<item value="659" key="DIALOG_Y_ORIGIN"/>
+		<item value="1202" key="DIALOG_X_ORIGIN"/>
+		<item value="399" key="DIALOG_HEIGHT"/>
+		<item value="1|微软雅黑|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|微软雅黑" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="orderForm" key="selection"/>
+		<list key="findhistory">
+			<item value="orderForm"/>
+			<item value="submit_Order"/>
+			<item value="totalPrice"/>
+			<item value="+"/>
+			<item value="orderItems"/>
+			<item value="提交"/>
+			<item value="购物车"/>
+			<item value="加入购物车"/>
+		</list>
+		<list key="replacehistory">
+			<item value="itemPrice"/>
+			<item value="itemImage"/>
+			<item value="itemTitle"/>
+			<item value="itemId"/>
+			<item value="16"/>
+			<item value="253"/>
+			<item value="7L"/>
+			<item value="map"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item value="329" key="DIALOG_Y_ORIGIN"/>
+		<item value="540" key="DIALOG_X_ORIGIN"/>
+	</section>
+</section>

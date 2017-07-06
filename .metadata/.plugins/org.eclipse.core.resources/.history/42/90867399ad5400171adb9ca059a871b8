@@ -1,0 +1,50 @@
+package com.jt.manage.service;
+
+import java.util.List;
+
+import org.apache.commons.lang3.StringUtils;
+import org.apache.log4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.jt.common.service.BaseService;
+import com.jt.common.service.RedisService;
+import com.jt.manage.mapper.ItemCatMapper;
+import com.jt.manage.pojo.ItemCat;
+
+
+@Service
+public class ItemCatService extends BaseService<ItemCat>{
+	@Autowired
+	private ItemCatMapper itemCatMapper;
+	@Autowired
+	private RedisService redisService;
+	//jackson
+	private static final ObjectMapper MAPPER = new ObjectMapper();
+	private static final Logger log =Logger.getLogger(ItemCatService.class);
+
+	public List<ItemCat> treeList(Long id) {
+		
+		ItemCat itemCat = new ItemCat();
+		itemCat.setStatus(1);
+		itemCat.setParentId(id);
+		List<ItemCat> itemCatList = itemCatMapper.select(itemCat);
+		try {
+			String ITEMCAT_KEY="ITEMCAT_"+id;
+			String itemCatJson = redisService.get(ITEMCAT_KEY);
+			if(StringUtils.isNotEmpty(itemCatJson)){
+				
+			}
+			//写数据到缓存，把java对象变成字符串；缓存如果出错不能抛异常，要让业务继续运行。
+			itemCatJson = MAPPER.writeValueAsString(itemCatList);
+			redisService.set(ITEMCAT_KEY,itemCatJson);
+			return itemCatList;
+		} catch (JsonProcessingException e) {
+			e.printStackTrace();
+		}
+		return itemCatList;
+	}
+	
+}

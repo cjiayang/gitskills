@@ -1,0 +1,12 @@
+package com.jt.manage.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.jt.common.service.BaseService;
+import com.jt.manage.mapper.ItemMapper;
+import com.jt.manage.pojo.Item;
+
+public class ItemService extends BaseService<Item>{
+	@Autowired
+	private ItemMapper itemMapper;
+}

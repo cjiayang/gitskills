@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;jt-manager-pojo&apos;&#x0D;&#x0A;- Original project: &apos;jt-manager-pojo&apos;&#x0D;&#x0A;- Original element: &apos;jt-manager-pojo/src/main/java/org.jt.manager.pojo&apos;" description="Delete element" element1="/src\/main\/java&lt;org.jt.manager.pojo" element2="/src\/main\/java&lt;org.jt.manager" element3="/src\/main\/java&lt;org.jt" element4="/src\/main\/java&lt;org" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1496990459166" subPackages="false" version="1.0"/>
+</session>

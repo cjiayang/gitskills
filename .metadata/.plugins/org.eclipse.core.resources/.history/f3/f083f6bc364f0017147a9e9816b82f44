@@ -1,0 +1,44 @@
+package com.jt.manage.service;
+
+import java.util.Date;
+import java.util.List;
+
+import javax.sound.midi.VoiceStatus;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
+import com.jt.common.service.BaseService;
+import com.jt.common.vo.EasyUIResult;
+import com.jt.manage.mapper.ItemMapper;
+import com.jt.manage.pojo.Item;
+@Service
+public class ItemService extends BaseService<Item>{
+	@Autowired
+	private ItemMapper itemMapper;
+	
+	
+	public EasyUIResult queryItemList(Integer pageNum,Integer pageSize){
+		PageHelper.startPage(pageNum, pageSize);
+		List<Item> itemList = itemMapper.queryItemList();
+		PageInfo<Item> pageInfo = new PageInfo<Item>(itemList);
+		return new EasyUIResult(pageInfo.getTotal(),pageInfo.getList());
+	}
+	
+	public void saveItem(Item item){
+		item.setStatus(1);  //1.正常  2.下架 3.删除
+		item.setCreated(new Date());
+ 		itemMapper.insertSelective(item);
+	}
+	public void updateItem(Item item){
+		item.setUpdated(new Date());
+		itemMapper.updateByPrimaryKeySelective(item);
+	}
+	
+	public void deleteItems(String[] ids){
+		itemMapper.deleteByIDS(ids);
+	}
+}
+

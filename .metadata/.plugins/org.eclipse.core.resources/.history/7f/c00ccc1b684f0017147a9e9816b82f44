@@ -1,0 +1,13 @@
+package com.jt.manage.controller;
+
+import java.util.List;
+
+import com.jt.manage.pojo.Item;
+import com.jt.manage.service.ItemCatService;
+
+public class ItemController {
+	
+	public List<Item> query(){
+		
+	}
+}

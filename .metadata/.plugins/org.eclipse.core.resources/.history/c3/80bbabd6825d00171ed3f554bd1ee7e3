@@ -1,0 +1,22 @@
+package com.jt.web.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jt.common.service.HttpClientService;
+import com.jt.web.pojo.Cart;
+
+@Service
+public class OrderService {
+	@Autowired
+	private HttpClientService httpClientService;
+	public String createOrder(Long userId) throws Exception{
+		String url = "http://order.jt.com/order/create";
+		String orderId = httpClientService.doGet(url);
+		return orderId;
+	}
+	
+
+}

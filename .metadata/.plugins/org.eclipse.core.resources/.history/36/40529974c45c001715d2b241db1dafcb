@@ -1,0 +1,22 @@
+package com.jt.order.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.github.miemiedev.mybatis.paginator.domain.Order;
+import com.jt.order.mapper.OrderMapper;
+
+@Service
+public class OrderService{
+	@Autowired
+	private OrderMapper orderMapper;
+	public Order queryById(String orderId){
+		return orderMapper.queryById(orderId);
+	}
+	public String create(Long userId,Order order){
+		String orderId = userId+""+System.currentTimeMillis();
+		
+		return orderMapper.create(order);
+	}
+
+}

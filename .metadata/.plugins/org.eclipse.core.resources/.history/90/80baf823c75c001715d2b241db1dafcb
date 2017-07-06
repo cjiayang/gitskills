@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jt.order.mapper.OrderMapper">
+	<!-- 按订单号查询订单（物流，商品） -->
+	<resultMap type="Order" id="orderRM" autoMapping="true">
+		<id property="orderId" column="order_id"/>
+		
+		<!-- 订单和物流一对一，必须放在前面 -->
+		<association property="orderShipping" select="orderShippingByOrderId" javaType="orderShipping" column="order_id">
+			<id property="orderId" column="order_id"></id>
+		</association>
+		
+		<!-- 订单和商品，一对多 -->
+		<collection property="orderItems" select="orderItemByOrderId" javaType="ArrayList" ofType="orderItem" column="order_id">
+			<id property="itemId" column="item_id"></id>
+			<id property="orderId" column="order_id"></id>
+		</collection>
+	</resultMap>
+	
+	<!-- 按订单的id查询 -->
+	<select id="queryById" parameterType="String" resultMap="orderRM">
+		select * from tb_order where order_id = #{orderId} 	
+	</select>
+	
+	
+	<!-- 某个订单对应的物流信息 -->
+	<select id="orderShippingByOrderId" parameterType="String" resultType="OrderShipping">
+		select * from tb_order_shipping where order_id = #{orderId} 	
+	</select>
+	
+	<!-- 某个订单对应商品信息 -->
+	<select id="orderShippingByOrderId" parameterType="String" resultType="OrderItem">
+		select * from tb_order_item where order_id = #{orderId} 	
+	</select>
+	
+	<!-- 创建订单 -->
+	<select id="create" parameterType="Order">
+		insert into tb_order(order_id,payment,payment_type,post_fee,status,payment_time,consign_time,end_time,close_time,shipping_name,shipping_code,user_id,buyer_message,buyer_nick,buyer_rate,created,updated) 
+		values(#{orderId},#{payment},#{paymentType},#{postFee},#{status},#{paymentTime},#{consignTime},#{endTime},#{closeTime},#{shippingName},#{shippingCode},#{userId},#{buyerMessage},#{buyerNick},#{buyerRate},#{created},#{updated});	
+		
+		insert into tb_order_shipping() values();
+		
+		insert into tb_order_item() values
+		<foreach collection="orderItem" item="item" separator=",">
+			
+			
+		</foreach>;
+	</select>
+	
+	<!-- 处理未支付的订单 ，两天内未支付，就修改状态-->
+	<update id="paymentOrderScan">
+	
+	
+	</update>
+	
+
+</mapper>

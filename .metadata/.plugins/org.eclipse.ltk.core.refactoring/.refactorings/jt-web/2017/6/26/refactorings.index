@@ -1,0 +1,25 @@
+1498458263434	Extract local variable 'jsonNode'
+1498458439439	Extract local variable 'cartListNode'
+1498463754720	Rename compilation unit 'ThreadLocal.java'
+1498463780711	Delete element
+1498464159765	Extract local variable 'jsonNode'
+1498464243521	Extract local variable 'curUser'
+1498469487510	Delete element
+1498479522714	Delete element
+1498479664852	Delete element
+1498543941688	Extract local variable 'jsonNode'
+1498544021741	Extract local variable 'jsonNode2'
+1498544198256	Extract local variable 'cartList'
+1498546242706	Extract local variable 'orderJson'
+1498611089098	Delete element
+1498611092966	Delete element
+1498612329190	Copy compilation unit
+1498619368530	Move folder
+1498620623579	Delete element
+1498626714737	Delete element
+1498629222204	Extract local variable 'jsonNode'
+1498629775623	Extract local variable 'cartList'
+1498733127641	Extract local variable 'curUser'
+1498820949903	Extract local variable 'jsonNode'
+1498821135634	Extract local variable 'cartList'
+1498821528309	Extract local variable 'traverse'

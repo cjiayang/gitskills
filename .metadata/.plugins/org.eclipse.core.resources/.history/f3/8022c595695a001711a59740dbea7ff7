@@ -1,0 +1,6 @@
+package com.jt.web.pojo;
+
+public class home {
+	private int dog;
+	private int cat;
+}
