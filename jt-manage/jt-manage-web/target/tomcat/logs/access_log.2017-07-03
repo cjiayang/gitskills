@@ -1,0 +1,14 @@
+127.0.0.1 - - [03/Jul/2017:08:08:47 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-1 509
+127.0.0.1 - - [03/Jul/2017:08:12:48 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-2 424
+127.0.0.1 - - [03/Jul/2017:08:53:29 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-1 504
+127.0.0.1 - - [03/Jul/2017:09:39:54 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-1 874
+127.0.0.1 - - [03/Jul/2017:09:40:55 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-2 81
+127.0.0.1 - - [03/Jul/2017:12:41:00 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-3 216
+127.0.0.1 - - [03/Jul/2017:12:41:40 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-4 163
+127.0.0.1 - - [03/Jul/2017:13:01:17 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-1 875
+127.0.0.1 - - [03/Jul/2017:13:01:41 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-2 269
+127.0.0.1 - - [03/Jul/2017:13:01:44 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-3 65
+127.0.0.1 - - [03/Jul/2017:13:21:10 +0800] "GET /web/itemcat/all?callback=category.getDataService HTTP/1.0" 200 31775 http-bio-8989-exec-4 130
+127.0.0.1 - - [03/Jul/2017:18:30:46 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-1 613
+127.0.0.1 - - [03/Jul/2017:18:45:30 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-2 15
+127.0.0.1 - - [03/Jul/2017:18:50:33 +0800] "GET /web/itemdesc/562379 HTTP/1.0" 200 2233 http-bio-8989-exec-1 566
